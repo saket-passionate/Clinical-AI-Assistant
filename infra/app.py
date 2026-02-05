@@ -2,19 +2,16 @@
 import os
 import aws_cdk as cdk
 
-from clinical_ai_assistant_stack import ClinicalAiAssistantStack
+from clinical_ai_assistant_stack import ClinicalAIAssistantStack
 
 
 app = cdk.App()
 
-ClinicalAiAssistantStack(
-    app,
-    "ClinicalAiAssistantStack",
-    env=cdk.Environment(
-        account=os.getenv('CDK_DEFAULT_ACCOUNT'),
-        region=os.getenv('CDK_DEFAULT_REGION')
-    ),
-    description="Clinical AI Assistant infrastructure stack"
-)
+ClinicalAIAssistantStack(app, "ClinicalAIAssistantStack",
+                         env=cdk.Environment(
+                             account=os.getenv("CDK_DEFAULT_ACCOUNT"),
+                             region='us-east-1'
+                            )
+                        )
 
 app.synth()
