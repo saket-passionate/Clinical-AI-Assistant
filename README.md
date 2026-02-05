@@ -2,14 +2,6 @@
 
 A comprehensive AI-powered tool designed and developed to help healthcare professionals record and document their conversations with patients. This tool significantly reduces operational overhead and burnout faced by doctors while creating notes, summarizing clinical sessions, and maintaining patient history.
 
-## App Demo
-
-![Clinical AI Assistant App](./image.png)
-
-🔗 **Live Application**: [https://patient-clinic.preview.emergentagent.com/](https://patient-clinic.preview.emergentagent.com/)
-
-> **Note**: The frontend application and its integration logic are hosted on Emergent. The app allows healthcare providers to record sessions, which are automatically uploaded to the S3 bucket for processing.
-
 ## Overview
 
 The Clinical AI Assistant automates the entire workflow of clinical documentation, from recording patient conversations to generating structured medical reports in SOAP format, allowing healthcare professionals to focus more on patient care and treatment.
@@ -19,6 +11,25 @@ The Clinical AI Assistant automates the entire workflow of clinical documentatio
 - **Frontend Application**: Web-based interface for recording and managing clinical sessions
 - **AWS Backend**: Serverless infrastructure for processing, transcription, and report generation
 - **Integration Layer**: Seamless connection between the app and AWS services via S3 bucket uploads
+
+## App Demo
+
+![Clinical AI Assistant App](./image.png)
+
+🔗 **Live Application**: [https://patient-clinic.preview.emergentagent.com/](https://patient-clinic.preview.emergentagent.com/)
+
+> **Note**: The frontend application and its integration logic are hosted on Emergent. The app allows healthcare providers to record sessions, which are automatically uploaded to the S3 bucket for processing.
+
+## System Architecture
+
+![System Architecture](./system_architectire.png)
+
+Built on AWS serverless architecture using:
+- **AWS HealthScribe**: Medical speech-to-text and clinical documentation
+- **AWS Lambda**: Serverless processing functions
+- **Amazon S3**: Audio and report storage
+- **Amazon SES**: Email notification service
+- **AWS CDK**: Infrastructure as Code deployment
 
 ## Key Benefits
 
@@ -37,15 +48,6 @@ SOAP (Subjective, Objective, Assessment, Plan) is the medical standard for clini
 - **Plan**: Treatment Plan and Medications
 
 This format ensures consistency, compliance, and allows doctors to focus more on patient care and treatment.
-
-## Architecture
-
-Built on AWS serverless architecture using:
-- **AWS HealthScribe**: Medical speech-to-text and clinical documentation
-- **AWS Lambda**: Serverless processing functions
-- **Amazon S3**: Audio and report storage
-- **Amazon SES**: Email notification service
-- **AWS CDK**: Infrastructure as Code deployment
 
 ## Features
 
