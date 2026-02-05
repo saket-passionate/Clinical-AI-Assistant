@@ -1,0 +1,6 @@
+# AWS CDK dependencies
+aws-cdk-lib>=2.100.0
+constructs>=10.0.0
+
+# Core Python dependencies
+boto3>=1.26.0
