@@ -1,10 +1,14 @@
 # Clinical AI Assistant
 
-A comprehensive AI-powered tool designed and developed to help healthcare professionals record and document their conversations with patients. This tool significantly reduces operational overhead and burnout faced by doctors while creating notes, summarizing clinical sessions, and maintaining patient history.
+An advanced AI-powered tool leveraging **AWS HealthScribe**, a powerful medical-specific Large Language Model (LLM), to help healthcare professionals record and document their conversations with patients. This tool significantly reduces operational overhead and burnout faced by doctors while creating notes, summarizing clinical sessions, and maintaining patient history.
+
+<p align="center">
+  <img src="https://d1.awsstatic.com/product-page-diagram_Amazon-Transcribe%20Medical_HIW%402x.3f0342c1b18cb96d6f139e6b5d6fd05bc0654ece.png" alt="AWS HealthScribe" width="100"/>
+</p>
 
 ## Overview
 
-The Clinical AI Assistant automates the entire workflow of clinical documentation, from recording patient conversations to generating structured medical reports in SOAP format, allowing healthcare professionals to focus more on patient care and treatment.
+The Clinical AI Assistant automates the entire workflow of clinical documentation using AWS HealthScribe's medical-grade AI model. From recording patient conversations to generating structured medical reports in SOAP format, it allows healthcare professionals to focus more on patient care and treatment.
 
 ### System Components
 
